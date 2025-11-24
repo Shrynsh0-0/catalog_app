@@ -29,8 +29,8 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: SingleChildScrollView(
+    return Scaffold(
+      body: SingleChildScrollView(
         child: Form(
           key: _formKey,
           child: Column(
@@ -75,8 +75,8 @@ class _LoginPageState extends State<LoginPage> {
                         if (value == null || value.isEmpty) {
                           return "Please Enter Password";
                         }
-                        else if (value.length < 6) {
-                          return "Password Must have 6 Characters";
+                        else if (value.length < 8) {
+                          return "Password Must have 8 Characters";
                         }
                         return null;
                       },

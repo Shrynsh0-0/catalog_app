@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.black,
         )
       ),
+      debugShowCheckedModeBanner: false, //remove later on
       routes: {
         "/":(context) => HomePage(),
         MyRoutes.homeRoute:(context) => HomePage(),
